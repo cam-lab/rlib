@@ -1,0 +1,9 @@
+*******************************************************************************
+Set of common used libs (espetially in R project)
+
+1. rawstreamtester - test sequence generator and checker for test
+   Ethernet/USB and another modules
+2. bufpool - buffer pool - see also "inc" rep for more info
+*******************************************************************************
+
+

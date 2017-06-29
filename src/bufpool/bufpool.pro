@@ -1,7 +1,6 @@
 TEMPLATE    = lib
 CONFIG     += staticlib
 TARGET      = bufpool
-DEPENDPATH += .
 TOPDIR      = ../..
 
 include($$TOPDIR/common.pri)
@@ -14,7 +13,8 @@ HEADERS    += \
 
 SOURCES    += bufpool.cpp 
 QT         += testlib
+DEFINES    += ENA_FW_QT MSG_SELF_RELEASE
 
 win32 {
-    LIBS += -lsetupapi -luuid -ladvapi32 -lws2_32
+	DEFINES    += ENA_WIN_API
 }

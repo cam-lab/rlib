@@ -1,3 +1,5 @@
+#!/bin/sh
+
 rm Makefile
 
 rm src/bufpool/Makefile

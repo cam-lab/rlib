@@ -1,11 +1,14 @@
 TEMPLATE    = lib
-CONFIG     += staticlib
 TARGET      = rawstreamtester
+
+CONFIG     += staticlib
+
 TOPDIR      = ../..
 
-include($$TOPDIR/common.pri)
-include($$TOPDIR/build.pri)
+include($${TOPDIR}/build.pri)
 
-HEADERS    += $$TOPDIR/include/rawstreamtester.h
+HEADERS    += \
+		$${INC_DIR}/rawstreamtester.h
+
 SOURCES    += rawstreamtester.cpp 
 QT         += testlib

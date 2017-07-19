@@ -1,13 +1,30 @@
-del Makefile.*
+@echo off
 
-del src\bufpool\Makefile.*
-rd src\bufpool\debug /S /Q 
-rd src\bufpool\release /S /Q
-rd src\bufpool\moc /S /Q
-rd src\bufpool\x64 /S /Q
+set DISABLE_QMAKE_DEFAULT_BUILD=1
+set USE_VS_BUILD=0
 
-del src\streamtester\Makefile.*
-rd src\streamtester\debug /S /Q 
-rd src\streamtester\release /S /Q
-rd src\streamtester\moc /S /Q
-rd src\streamtester\x64 /S /Q
+if "%1"=="" (
+	set TOPDIR=.
+) else (
+	set TOPDIR=%1
+)
+
+del %TOPDIR%\Makefile.*
+del %TOPDIR%\src\bufpool\Makefile.*
+del %TOPDIR%\src\streamtester\Makefile.*
+
+rd  %TOPDIR%\build /S /Q 
+rd  %TOPDIR%\bin /S /Q 
+
+if %DISABLE_QMAKE_DEFAULT_BUILD%==0 (
+	rd  %TOPDIR%\src\bufpool\debug /S /Q 
+	rd  %TOPDIR%\src\bufpool\release /S /Q
+
+	rd  %TOPDIR%\src\streamtester\debug /S /Q 
+	rd  %TOPDIR%\src\streamtester\release /S /Q
+)
+
+if %USE_VS_BUILD%==1 (
+	rd  %TOPDIR%\src\bufpool\x64 /S /Q
+	rd  %TOPDIR%\src\streamtester\x64 /S /Q
+)

@@ -1,15 +1,16 @@
 TEMPLATE    = lib
-CONFIG     += staticlib
 TARGET      = bufpool
-TOPDIR      = ../..
 
-include($$TOPDIR/common.pri)
-include($$TOPDIR/build.pri)
+CONFIG     += staticlib
+
+PRJ_DIR     = ../..
+
+include($${PRJ_DIR}/build.pri)
 
 HEADERS    += \
-               $$TOPDIR/include/bufpool.h       \
-               $$TOPDIR/include/sysutils.h      \
-               $$TOPDIR/include/msg.h
+               $${INC_DIR}/bufpool.h       \
+               $${INC_DIR}/sysutils.h      \
+               $${INC_DIR}/msg.h
 
 SOURCES    += bufpool.cpp 
 QT         += testlib

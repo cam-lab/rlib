@@ -1,0 +1,26 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2015
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "rawstreamtester", "D:/Mike/projects/p/work/viewP/src/rlibs/src/streamtester\rawstreamtester.vcxproj", "{E2783DF8-03F1-34BD-9CF9-0A7B78977330}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "bufpool", "D:/Mike/projects/p/work/viewP/src/rlibs/src/bufpool\bufpool.vcxproj", "{2A1E4AC6-A392-30F1-ABD5-8BBBE8AF9C30}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E2783DF8-03F1-34BD-9CF9-0A7B78977330}.Debug|x64.ActiveCfg = Debug|x64
+		{E2783DF8-03F1-34BD-9CF9-0A7B78977330}.Debug|x64.Build.0 = Debug|x64
+		{E2783DF8-03F1-34BD-9CF9-0A7B78977330}.Release|x64.ActiveCfg = Release|x64
+		{E2783DF8-03F1-34BD-9CF9-0A7B78977330}.Release|x64.Build.0 = Release|x64
+		{2A1E4AC6-A392-30F1-ABD5-8BBBE8AF9C30}.Debug|x64.ActiveCfg = Debug|x64
+		{2A1E4AC6-A392-30F1-ABD5-8BBBE8AF9C30}.Debug|x64.Build.0 = Debug|x64
+		{2A1E4AC6-A392-30F1-ABD5-8BBBE8AF9C30}.Release|x64.ActiveCfg = Release|x64
+		{2A1E4AC6-A392-30F1-ABD5-8BBBE8AF9C30}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

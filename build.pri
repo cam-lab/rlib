@@ -39,8 +39,6 @@ INCLUDEPATH += .                             \
 	       $${PRJ_DIR}/src\streamtester  \
                $${INC_DIR}
 
-message("INC" $${INCLUDEPATH})
- 
 #---
 CONFIG(release, debug|release) {
    DESTDIR     = $${OUT_DIR}/release

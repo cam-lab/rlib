@@ -13,6 +13,11 @@ del %TOPDIR%\Makefile.*
 del %TOPDIR%\src\bufpool\Makefile.*
 del %TOPDIR%\src\streamtester\Makefile.*
 
+del %TOPDIR%\*.sln
+del %TOPDIR%\src\bufpool\*.vcxproj.*
+del %TOPDIR%\src\streamtester\*.vcxproj.*
+
+
 rd  %TOPDIR%\build /S /Q 
 rd  %TOPDIR%\bin /S /Q 
 

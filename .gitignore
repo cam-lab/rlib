@@ -18,3 +18,4 @@ libs
 /**/*.vcxproj
 /**/*.sln
 *pro.user
+clean

@@ -1,17 +1,14 @@
 TEMPLATE    = lib
-CONFIG     += staticlib
 TARGET      = rawstreamtester
-DEPENDPATH += .
+
+CONFIG     += staticlib
+
 TOPDIR      = ../..
 
-include($$TOPDIR/common.pri)
-include($$TOPDIR/build.pri)
+include($${TOPDIR}/build.pri)
 
-HEADERS    += $$TOPDIR/include/rawstreamtester.h
+HEADERS    += \
+		$${INC_DIR}/rawstreamtester.h
 
 SOURCES    += rawstreamtester.cpp 
 QT         += testlib
-
-win32 {
-    LIBS += -lsetupapi -luuid -ladvapi32 -lws2_32
-}

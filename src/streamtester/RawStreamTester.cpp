@@ -1,6 +1,7 @@
 
 #include <cstdio>
 #include <cmath>
+#include <cstdlib>
 
 #include "RawStreamTester.h"
 

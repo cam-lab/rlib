@@ -1,0 +1,39 @@
+#-------------------------------------------------------------------------------
+#
+#     streamtester library build construction script
+#
+import os
+
+#-------------------------------------------------------------------------------
+#
+#     General
+#
+ProductName = 'streamtester'
+
+Import('env')
+
+env = env.Clone()
+Platform = env['PLATFORM']
+
+#-------------------------------------------------------------------------------
+#
+#     Setup sources and target
+#
+Sources = ['RawStreamTester.cpp']
+Target  = os.path.join(env['LIBPATH'], ProductName)
+
+#-------------------------------------------------------------------------------
+#
+#     Setup local construction environment
+#
+env.EnableQt5Modules(['QtTest'])
+
+#-------------------------------------------------------------------------------
+#
+#     Build the target
+#
+
+lib = env.StaticLibrary(Target, Sources)
+
+#-------------------------------------------------------------------------------
+

@@ -26,7 +26,7 @@ Target  = os.path.join(env['LIBPATH'], ProductName)
 #
 #     Setup local construction environment
 #
-env.EnableQt5Modules(['QtTest'])
+env.EnableQt5Modules(['QtTest', 'QtCore'])
 
 DEFINES = ['ENA_FW_QT', 'MSG_SELF_RELEASE']
 
